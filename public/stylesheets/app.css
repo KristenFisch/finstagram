@@ -1,4 +1,4 @@
-/*Why isnt this loading*/
+
 main {
     background-color: white;
     padding: 16px;
@@ -9,4 +9,12 @@ header {
 }
 body {
     background-color: whitesmoke;
+}
+
+.post {
+    margin-bottom: 48px;
+}
+
+.post .user-info img {
+    border-radius: 50%
 }
