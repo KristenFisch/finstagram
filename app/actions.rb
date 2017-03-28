@@ -10,7 +10,7 @@ get '/' do
     @post_shark = {
         username:  "sharky_j",
         avatar_url:  "http://naserca.com/images/sharky_j.jpg",
-        photo_url:  "http://nascera.com/images/shark.jpg",
+        photo_url:  "http://naserca.com/images/shark.jpg",
         humanized_time_ago: humanized_time_ago(15),
         like_count: 0, 
         comment_count: 1,
