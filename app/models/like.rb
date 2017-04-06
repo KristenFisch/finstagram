@@ -1,3 +1,3 @@
-class Like < Active Record::Base
+class Like < ActiveRecord::Base
 
 end
