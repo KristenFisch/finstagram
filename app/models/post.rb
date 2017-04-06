@@ -5,7 +5,7 @@ class Post < ActiveRecord::Base
     has_many :likes
     
     def humanized_time_ago
-        time_ago_in_minutes = Time.now - self.created_at
+        time_ago_in_seconds = Time.now - self.created_at
         time_ago_in_minutes = time_ago_in_seconds / 60
         
         if time_ago_in_minutes >= 60
