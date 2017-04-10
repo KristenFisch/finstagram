@@ -16,8 +16,18 @@ get '/signup' do
     erb(:signup)
 end 
 
+    
 post '/signup' do
-    params.to_s
+    email = params[:email]
+    avatar_url = params[:avatar_url]
+    username = params[:username]
+    password = params[:password]
+    
+    
+    user = User.new({ email: email, avatar_url: avatar_url, username: username, password: password })
+    user.save
+    
+    escape_html user.inspect
 end
 
 
