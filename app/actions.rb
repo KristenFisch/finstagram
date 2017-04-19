@@ -80,6 +80,7 @@ post '/posts' do
     end
 end
 
+
 get '/posts/:id' do
     @post = Post.find(params[:id])
     erb(:"posts/show")
