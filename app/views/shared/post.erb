@@ -11,7 +11,12 @@
   <%= erb(:"shared/likes", { locals: { post: post }}) %>
   <span class="comment-count"><%= post.comment_count %> comments</span>
   </div>
-  <%= erb(:"shared/new_comment", { locals: { post: post }}) %>
+  
+  <% if current_user %>
+    <%= erb(:"shared/new_comment", { locals: { post: post }}) %>
+  <% end %>
+
+
   <ul class="comments">
     <% post.comments.each do |comment| %>
       <li>
